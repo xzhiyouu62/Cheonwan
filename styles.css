@@ -550,6 +550,22 @@ body.intro-finished .nav-menu {
     animation: blink 1s infinite;
 }
 
+.member-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 10;
+    position: relative;
+}
+.member-link:hover {
+    text-decoration: underline;
+    color: #4a6fa5;
+}
+.member h3 {
+    pointer-events: auto;
+}
+
 @keyframes blink {
     0%, 50% { opacity: 1; }
     51%, 100% { opacity: 0; }
