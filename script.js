@@ -1,4 +1,3 @@
-// 圖表數據
 const populationYears = [1970,1975,1980,1985,1990,1995,2000,2005,2010,2015,2020,2025,2030,2035,2040,2045,2050,2055,2060,2065,2070];
 const taiwan65 = [2.92,3.5,4.29,5.06,6.22,7.64,8.62,9.74,10.74,12.51,16.07,20.02,24.23,27.91,31.04,35.02,38.42,40.58,43.16,45.62,46.54];
 const korea65  = [3.31,3.48,3.87,4.33,4.98,5.93,7.33,9.28,11.3,12.96,15.99,20.3,25.3,29.9,34.3,37.3,40.1,41.7,44.2,null,null];
@@ -17,7 +16,6 @@ const koreaAging = [
     439.8,442.2,443.7,446,449.7,454.6,462.1,470.5,479.8,488.6,496.5,504,null // 2039-2050 (2050 後無更多資料)
 ];
 
-// 圖表建構函數
 function buildDataset(label, data, color) {
     return {
         label,
@@ -30,7 +28,6 @@ function buildDataset(label, data, color) {
     };
 }
 
-// 導航功能
 function initNavigation() {
     const buttons = document.querySelectorAll('.nav-btn');
     const sections = document.querySelectorAll('.section');
@@ -93,7 +90,6 @@ function initNavigation() {
     }, false);
 }
 
-// 圖表初始化
 function initCharts() {
     const populationCtx = document.getElementById('populationChart').getContext('2d');
     new Chart(populationCtx, {
@@ -299,7 +295,6 @@ function initTypewriter() {
     typeText();
 }
 
-// 主要初始化函數
 window.addEventListener('load', () => {
     const introOverlay = document.getElementById('introOverlay');
     const skipButton = document.getElementById('skipIntro');
